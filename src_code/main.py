@@ -1,2 +1,1 @@
-def add3number(x,y,z):
-    return x+y+z
+# The coding standard for variable names is camel case, for example, varName.
