@@ -14,9 +14,9 @@ def read_to_geodataframe(FilePath):
     Defines a function to read vector spatial data and return a geodataframe object.
 
     Parameters:
-    - filepath: path to the vector file (e.g. .shp, .geojson etc.)
+    - filepath (str): path to the vector file (e.g. .shp, .geojson etc.)
     Returns:
-    - Geodataframe
+    - Geodataframe (GeoDataFrame)
     """
 
     # Ensure valid filepath
@@ -38,7 +38,7 @@ def print_geodataframe(GeoDataframe):
     Defines a function to show vector spatial data, attribute table, row by row in the console.
 
     Parameters:
-    - Input geodataframe
+    - Input geodataframe (GeoDataFrame)
     Returns:
     - None
     """
@@ -71,9 +71,9 @@ def project_gcs_to_pcs(InputGDF, OutputFolderPath, ESPG=3308):
     and save the output (projected layer) as shapefile to the output folder in the repository.
     
     Parameters:
-    - Input geodataframe
-    - OutputFolderPath: path to the output folder
-    - ESPG: desired projected coordinate system espg code. Default 7855 (GDA2020/NSW Lambert)
+    - Input geodataframe (GeoDataFrame)
+    - OutputFolderPath (str): path to the output folder
+    - ESPG (int): desired projected coordinate system espg code. Default 7855 (GDA2020/NSW Lambert)
     Returns:
     - None
     """
